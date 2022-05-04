@@ -710,6 +710,7 @@ button{
 }
 .faq__secciones p {
     color: #7cd1fb;
+    text-align: center;
     line-height: 40px;
     font-size: 1.2em;
     display: none;
