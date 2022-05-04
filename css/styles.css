@@ -156,9 +156,10 @@ footer {
 .columna2__nombre {
     margin-left: 2em;
 }
-.columna2__github img {
-    width: 18px;
+.columna2__github a img {
+    width: 20px;
     margin-left: 2em;
+    margin-top: .8em;
 }
 .columna1{
     display: flex;
