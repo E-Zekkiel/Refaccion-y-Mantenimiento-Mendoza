@@ -339,7 +339,7 @@ main{
 }
 
 .main__ultProyectos--img {
-    width: 100%;
+    width: 90%;
     max-width: 270px;
     margin: 1vh 2vw;
     border-radius: 15px;
