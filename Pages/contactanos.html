@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contactanos</title>
+</head>
+
+<body>
+
+    <a class="button__up" href="#">
+        <img src="../Img/icono-flecha.png" alt="Ir-Arriba">
+    </a>
+    
+    <header>
+
+        <div class="header__top">
+            <a href="../index.html"><img class="header__top--logo" src="../Img/logo.png" alt="ejemplo-de-logo" ></a>
+            <h2 class="header__top--titulo">Refaccion y mantenimiento</h2>
+        </div>
+
+    </header>
+    
+    <nav class="header__nav" id="lateral">
+        <input type="checkbox" id="mostrar__lateral">
+            <input type="checkbox" id="mostrar__lateral">
+            <label for="mostrar__lateral" class="btn__label">
+                <span id="spn1"></span>
+                <span id="spn2"></span>
+                <span id="spn3"></span>
+            </label>
+        <label for="mostrar__lateral" class="btn__label">
+            <span id="spn1"></span>
+            <span id="spn2"></span>
+            <span id="spn3"></span>
+        </label>
+        <div class="header__nav--content1">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./proyectos.html">Proyectos</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./preguntas-frecuentes.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="header__nav--content2">
+            <div class="header__nav--icon">
+                <img src="../Img/icono-tel.png" alt="icon-tel">
+                <a href="https://wa.me/1XXXXXXXXXX">+54 (ejemplo tel.)</a>
+            </div>
+            <div class="header__nav--icon">
+                <img src="../Img/icono-email.png" alt="icon-email">
+                <a href="../Pages/contactanos.html">(ejemplo de e-mail)</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="main--contactanos">
+        <div class="contactanos">
+            <div class="contactanos__map">
+                <iframe class="contactanos__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44379323685!2d-58.50350949518624!3d-34.61566236107177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1650592169621!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contactanos__formulario">
+                <form action="correo" >
+    
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre">
+                    </div>
+        
+                    <div>
+                        <label for="correo">Tu correo: </label>
+                        <input type="email" id="correo" name="correo" placeholder="correo electronico">
+                    </div>
+        
+                    <div class="content__categoria">
+                        <p>Mi consulta es del tipo..</p>
+                        <label class="formulario__categoria" for="gas">Gas</label>
+                        <input class="check" type="checkbox" name="tipo" id="gas">
+                        <label class="formulario__categoria" for="electricidad">Electricidad</label>
+                        <input class="check" type="checkbox" name="tipo" id="electricidad">
+                        <label class="formulario__categoria" for="construccion">Construccion</label>
+                        <input class="check" type="checkbox" name="tipo" id="construccion">
+                        <label class="formulario__categoria" for="otro">otro</label>
+                        <input class="check" type="checkbox" name="tipo" id="otro">
+                    </div>
+                        
+                    <div>
+                        <label for="consulta">Dinos tu consulta: </label>
+                        <textarea name="consulta" id="consulta" cols="40" rows="6" placeholder="Ingrese aqui su consulta"></textarea>
+                    </div>
+        
+                    <div class="content__terminos">
+                        <label for="terminos">Aceptar Terminos y Condiciones</label>
+                        <input class="check" type="radio" name="terminos" id="terminos">
+                    </div>
+        
+                    <button>Enviar mi Consulta</button>
+                        
+                </form>
+        
+            </div>
+    
+            <div class="contactanos__oficinas">
+                <h2>OFICINAS</h2>
+                <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+    
+        </div>
+    </main>
+
+    <footer>
+<!--logo de 100px-->
+        <div class="columna1">
+            <a href="#"><img class="columna1__logo" src="../Img/Logo.png" alt="logo-footer"></a>
+        </div>
+
+        <div class="columna2">
+            <p>Created by</p>
+            <a class="columna2__nombre" href="#">Ezequiel Mendoza R.</a>
+
+            <div class="columna2__github">
+<!--icono de 18px-->
+                <img class="columna2__github--logo" src="../Img/icono-github.png" alt="icono-github">
+                <a href="#">Source</a>
+            </div>
+        </div>
+
+        <div class="columna3">
+            <p>"Direccion, C.P, distrito".</p>
+            <p>"Argentina"</p>
+<!--iconos de 15px-->
+            <img src="../Img/icono-tel2.png" alt="icono-tel2">
+            <span>"num. telefono"</span>
+            <br>
+            <img src="../Img/icono-email2.png" alt="icono-email2">
+            <span>"e-mail"</span>
+        </div>
+
+        <div class="columna4">
+            
+<!--iconos de 50px-->
+            <a class="twitter" href="https://www.twitter.com/" >
+                <img src="../Img/icono-twitter.png" alt="icono-twitter">
+            </a>
+            <a class="facebook" href="https://www.facebook.com/" >
+                <img src="../Img/icono-facebook.png" alt="icono-facebook">
+            </a>
+            <a class="instagram" href="https://www.instagram.com/" >
+                <img src="../Img/icono-instagram.png" alt="icono-instagram">
+            </a>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>
