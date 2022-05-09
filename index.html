@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="./img/baner-previw.png">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="./Img/logo2.png" type="image/png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
     <title>Servicios y Mantenimiento</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -18,9 +20,9 @@
 
     <header>
 
-        <div class="header__top">
-            <a href="#"><img class="header__top--logo logo" src="./Img/logo.png" alt="ejemplo-de-logo" ></a>
-            <h2 class="header__top--titulo titulo">Refaccion y mantenimiento</h2>
+        <div class="header__top col">
+            <a href="#"><img class="header__top--logo logo col-dm-4" src="./Img/logo.png" alt="ejemplo-de-logo" ></a>
+            <h2 class="header__top--titulo titulo co-md-8">Refaccion y mantenimiento</h2>
         </div>
 
         
@@ -77,14 +79,14 @@
         </section>
 
         <div class="main__info">
-            <div class="main__info--fondo1">
+            <div class="main__info--fondo1 col-12">
                 <section class="main__info--columna">
                     <h2>¿Quienes somos?</h2>
                     <h4>"Nombre de la empresa" Nació con la inciativa de facilitar la conexcion en el cliente y el personal capacitado que requiera. Contamos con gasistas matriculados, tecnicos electricistas, asi como plomeros y todo tipo de personal que necesite para hacer de su casa, un hogar.</h4>
                 </section>
             </div>
     
-            <div class="main__info--fondo2">
+            <div class="main__info--fondo2 col-12">
                 <section class="main__info--columna">
                     <h2>Nuestro Objetivo</h2>
                     <h4>Brindar un servicio de excelencia a través del entendimiento de las necesidades de nuestros Clientes , para el mantenimiento, refaccion y/o edificacion con su respectiva habilitacion</h4>
@@ -95,18 +97,18 @@
         <section class="main__ultProyectos">
             
             <div class="main__ultProyectos--fondo">
-                <div class="main__ultProyectos--content">
+                <div class="main__ultProyectos--content container">
                     <h2>ULTIMOS PROYECTOS</h2>
                     <div class="main__ultProyectos--imgContent">
 
-                        <a href="#">
+                        <a href="#" class="col-12 col-md-5 col-lg 4">
                             <div class="main__ultProyectos--img1">
                                 <img class="main__ultProyectos--img" src="./Img/imagen-construcción.jpg" alt="imagen-construcción">
                                 <p>CONTRUCCIÓN</p>
                             </div>
                         </a>
 
-                        <a href="">
+                        <a href="" class="col-12 col-md-5 col-lg 4">
                             <div class="main__ultProyectos--img2">
                                 <p>INSTALACION DE GAS</p>
                                 <img class="main__ultProyectos--img" src="./Img/imagen-gas.jpg" alt="imagen-gas">
@@ -114,7 +116,7 @@
                             </div>
                         </a>
 
-                        <a href="">
+                        <a href="" class="col-12 col-md-5 col-lg 4">
                             <div class="main__ultProyectos--img3">
                                 <img class="main__ultProyectos--img" src="./Img/imagen-electrica.jpg" alt="imagen-electrica">
                                 <p>ELETRICIDAD</p>
@@ -174,6 +176,7 @@
 
     </footer>
 
-    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
