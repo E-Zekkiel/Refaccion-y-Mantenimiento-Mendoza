@@ -63,19 +63,77 @@
 
     </nav>
     
-    <main>
-        <div class="main__faq">
+    <main class="main__faq">
+        <div>
             <div class="faq__busqueda">
                 <img src="../Img/fondo-busqueda.jpg" alt="fondo-busqueda">
-                <div class="faq__busqueda--capa"></div>
-                <div class="faq__busqueda--text ">
+                <div class="faq__busqueda--capa">
                     <input type="text" name="busqueda" id="busqueda" placeholder="¿Dinos que deseas preguntar?">
                 </div>
+                
             </div>
-            <div class="faq__secciones">
-                <a href="#section-1">¿Como se efetua el Pago?</a>
-                <p id="section-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
-                <div></div>
+
+            <div class="faq__secciones accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Como se efectua el pago?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="separador__FAQ"></div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Como cancelar una solicitud?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div id="separador__FAQ"></div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cargos adicionales?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div id="separador__FAQ"></div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Solicitar mas servicios?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
+                        </div>
+                    </div>
+                  </div>
+
+
+                <!-- <div></div>
                 <a href="#section-2">¿Como cancelar una solicitud?</a>
                 <p id="section-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
                 <div></div>
@@ -84,8 +142,8 @@
                 <div></div>
                 <a href="#section-4">¿Solicitar mas servicios?</a>
                 <p id="section-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, odit!</p>
-                <div></div>
-    
+                <div></div> -->
+                
             </div>
     
         </div>        
