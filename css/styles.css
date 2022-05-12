@@ -449,9 +449,10 @@ main{
 /*-----aside-----*/
 .proyectos__aside{
     background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important;
-    /* min-height: 400px !important; */
+    min-height: 400px !important;
     text-align: center;
     font-size: 1.2vw;
+    padding-top: 3em;
 }
 .proyectos__aside a{
     font-size: 2em;
@@ -478,6 +479,7 @@ main{
 }
 
 #sec__gas:target {
+
     display: grid;
 }
 
@@ -487,12 +489,13 @@ main{
 
 #sec__electricidad, #sec__construccion, #sec__gas {
     display: none;
+
+
     align-items: center;
     justify-items: center;
     width: 100%;
     
     content: '';
-    transition: 1s ease;
     
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -501,6 +504,7 @@ main{
     margin-bottom: 10vw;
 }
 
+
 .proyectos__content {
     width: 100%; 
     max-width: 1000px;
@@ -508,8 +512,25 @@ main{
     max-height: 500px;
     position: relative;
     
+    
 }
+.proyectos__content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #20113d98;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 
+    transition: all 300ms ease-out;
+}
 .proyectos__content div, .proyectos__content img, .proyectos__content iframe{
     width: 100%; 
     max-width: 1000px;
@@ -520,10 +541,10 @@ main{
 
 
 .proyectos__capa{
-    background-color: #20113d98;
-    background-size: cover;
+    /* background-color: #20113d98; */
     border-radius: 15px;
     position: absolute;
+    top: 20px;
     padding: 10px;
     
 
@@ -538,7 +559,8 @@ main{
     display: none;   
 }
 .imagenes {
-    transition: all .5s ease;
+    position: relative;
+    transition: all 300ms ease-out;
     width: 100%;
     max-width: 900px;
     height: 200px;
@@ -546,7 +568,7 @@ main{
 }
 .imagenes:hover {
     transform: scale(1.2);
-    z-index: auto;
+    z-index: 10;
 }
 
 
@@ -632,22 +654,6 @@ main{
     grid-template-columns: 1fr 1fr;
 }
 
-/* textarea{
-    color: #000000;
-    font-size: 1.25em;
-    border-radius: 15px;
-
-    height: 60px;
-} */
-
-/* button{
-    background-image: linear-gradient(to right, #001b54 25%, #156a69 90%);
-    color: #ffffff;
-    height: 40px;
-    font-size: 1em;
-    padding: 5px;
-    border-radius: 15px;
-} */
 .contactanos__oficinas{
     grid-area: ofi;
     background: linear-gradient(180deg, rgba(28,38,44,1) 0%, rgba(28,38,44,0.4962359943977591) 76%, rgba(28,38,44,0) 100%);   
@@ -817,6 +823,14 @@ main{
         opacity: 1;
         visibility: visible;
     }
+    .proyectos__aside{
+        /* background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important; */
+
+    background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
+    }
+    #sec__electricidad, #sec__construccion, #sec__gas {        
+        grid-template-columns: 1fr;
+    }
 }
 @media (max-width: 700px) {
     body{
@@ -858,9 +872,9 @@ main{
         flex-flow: column;
     }
     .proyectos__aside{
-        background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important;
+            /* background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important; */
 
-        /* background: linear-gradient(90deg, #003f4e 20%, #003e4e82 50%, #65919900 80%); */
+        background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
         
     }
     .proyectos__aside a{
@@ -869,9 +883,7 @@ main{
     .proyectos__capa{
         font-size: 3.3vw;
     }
-    .proyectos {
-        grid-template-columns: 1fr;
-    }
+    
     .contactanos {
         grid-template-areas:
         'map map'
