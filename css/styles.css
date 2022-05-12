@@ -448,8 +448,8 @@ main{
 }
 /*-----aside-----*/
 .proyectos__aside{
-    background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
-    width: 30%;
+    background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important;
+    /* min-height: 400px !important; */
     text-align: center;
     font-size: 1.2vw;
 }
@@ -539,6 +539,10 @@ main{
 }
 .imagenes {
     transition: all .5s ease;
+    width: 100%;
+    max-width: 900px;
+    height: 200px;
+    margin: 20px 0;
 }
 .imagenes:hover {
     transform: scale(1.2);
@@ -854,8 +858,9 @@ main{
         flex-flow: column;
     }
     .proyectos__aside{
-        background: linear-gradient(90deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
-        width: 100%;
+        background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important;
+
+        /* background: linear-gradient(90deg, #003f4e 20%, #003e4e82 50%, #65919900 80%); */
         
     }
     .proyectos__aside a{
