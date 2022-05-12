@@ -559,8 +559,9 @@ main{
     'form ofi';
     
     justify-content: center;
-    gap: 20px;
+    gap: 2em 20px;
     margin: 0 10vw;
+    margin-top: 2em;
 }
 .contactanos__map{
     grid-area: map;
@@ -569,6 +570,7 @@ main{
     max-height: 400px;
     margin-bottom: 3vw;
     border-radius: 2vw;
+    box-shadow: 0 15px 25px rgb(0,0,0, 0.5);
 }
 .contactanos__formulario{
     grid-area: form;
@@ -577,6 +579,9 @@ main{
     padding: 3vw;
     border-radius: 20px;
 
+}
+.form-control{
+    background: #19252e !important;
 }
 .contactanos__formulario div{
     font-size:1.25em;
@@ -603,10 +608,17 @@ main{
 .content__categoria p{
     grid-column: span 2;
 }
-
+.comentario {
+    height: 150px !important;
+}
 .check{
-    transform: scale(.6);
-    margin: 0 10px;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.grupo__check {
+    background-color: #00000035;
+    color: #fff;
 }
 #consulta {
     width: 100%;
@@ -616,13 +628,13 @@ main{
     grid-template-columns: 1fr 1fr;
 }
 
-textarea{
+/* textarea{
     color: #000000;
     font-size: 1.25em;
     border-radius: 15px;
 
     height: 60px;
-}
+} */
 
 /* button{
     background-image: linear-gradient(to right, #001b54 25%, #156a69 90%);
