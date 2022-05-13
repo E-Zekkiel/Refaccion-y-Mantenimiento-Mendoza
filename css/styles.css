@@ -439,6 +439,21 @@ main{
 }
 
 /*--------------- COSAS DEL MAIN (proyectos) -----------------------*/
+
+.botoncito{
+    background: radial-gradient(circle, rgba(29,110,159,1) 25%, rgba(44,105,142,1) 41%, rgba(63,99,121,0.4962359943977591) 77%, rgba(0, 0, 0, 0) 90%);
+    width: 300px;
+    height: 200px;
+    z-index: 40 ;
+    border-radius: 40px;
+    font-size: 2em;
+    box-shadow: 0 15px 25px rgb(0,0,0, 0.7);
+}
+
+.modal-dialog {
+    margin: 30vh auto !important;
+}
+
 .main--proyectos{
     display: flex;
     flex-flow: row;
