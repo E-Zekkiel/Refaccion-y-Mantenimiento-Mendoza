@@ -182,7 +182,7 @@
         transform: rotate(-45deg);
         top: 10px;
     }
-
+    
 }
 @media screen and (max-width: 500px) {
     body {
@@ -228,6 +228,11 @@
     #lateral label {
         top: 45px;
         right: 15px;
+    }
+}
+@media (min-width: 500px) {
+    .proyectos__content--imagenes {
+        height: 300px;
     }
 
 }
