@@ -121,19 +121,27 @@ header {
 
 footer {
   background-color: #292f38;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 'columna1 columna2 columna3 columna4';
-  gap: 10px;
   min-height: 4vh;
   padding: 0 2vw;
   margin-top: 50px;
   font-size: 1em;
 }
 
+.columna1 {
+  width: fit-content;
+  justify-content: center;
+  margin: 1em 0;
+}
+
 .columna1__logo {
   width: 6.25em;
   margin: 1em;
+}
+
+.columna2 {
+  width: fit-content;
+  justify-content: center;
+  margin: 1em 0;
 }
 
 .columna2 p {
@@ -145,27 +153,16 @@ footer {
   margin-left: 2em;
 }
 
-.columna2__github a img {
+.columna2__github--logo {
   width: 20px;
   margin-left: 2em;
   margin-top: .8em;
 }
 
-.columna1 {
-  display: flex;
-  justify-content: center;
-  grid-area: columna1;
-  margin: 1rem;
-}
-
-.columna2 {
-  grid-area: columna2;
-  margin: 1rem;
-}
-
 .columna3 {
-  grid-area: columna3;
-  margin: 1rem;
+  width: fit-content;
+  justify-content: center;
+  margin: 1em 0;
 }
 
 .columna3 img {
@@ -177,9 +174,10 @@ footer {
 }
 
 .columna4 {
-  grid-area: columna4;
+  display: block;
+  width: fit-content;
   position: relative;
-  margin: 1rem;
+  margin: 1em 0;
   min-width: 9.375em;
   min-height: 6.25em;
 }
@@ -294,6 +292,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
   margin: 0 4vw;
 }
 
@@ -466,7 +466,7 @@ main {
 }
 
 .proyectos__aside {
-  background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important;
+  background: linear-gradient(180deg, #003f4e 20%, #003e4e82 70%, #65919900 90%) !important;
   min-height: 400px !important;
   text-align: center;
   font-size: 1.2vw;
@@ -489,7 +489,7 @@ main {
 }
 
 .proyectos__contenido {
-  margin: 2em 0;
+  margin: 2em 0 4em 0;
 }
 
 .proyectos__content {
@@ -823,9 +823,6 @@ main {
   }
   footer {
     font-size: 1em;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 'columna1   columna3' 'columna2   columna4';
   }
   .header__nav--content2 {
     display: flex;
