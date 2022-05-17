@@ -1,0 +1,27 @@
+header {
+    background-image: linear-gradient(90deg, #65969900 3%, #39464734 5%, #394647 8%, #394647 92%, #39464734 95%, #65969900 97%);
+    margin: 0 3em;
+}
+
+.header__top{
+    overflow: hidden;
+
+}
+.header__top a {
+    align-self: center;
+
+}
+.header__top--logo {
+    align-self: center;
+    grid-area: logo;
+    width: 12.5rem;
+    margin: 0 1vw;
+}
+
+.header__top--titulo {
+    grid-area: titulo;
+    font-size: 2.5em;
+    text-align: center;
+    min-height: 60px;
+    line-height: 2em;
+}

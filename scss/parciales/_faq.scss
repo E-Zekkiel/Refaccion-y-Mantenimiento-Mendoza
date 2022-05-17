@@ -1,0 +1,120 @@
+.main__faq{
+    margin: 0 10vw;
+    min-height: 90vh;
+}
+.faq__busqueda{
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 5vw;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    margin: 2em 0;
+
+    & img {
+        width: 100%;
+        transition: all 500ms ease-out;
+    }
+
+    &:hover {
+        & > .faq__busqueda--capa {
+            opacity: 1;
+            visibility: visible;        
+        }
+        & > img {
+            transform: scale(1.3);
+        }
+    }
+}
+.faq__busqueda--capa{
+    background: #0000007c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+    & input {
+        text-align: center;
+        background-color: #000000b2;
+        font-size: 1.25em;
+        width: 100%;
+        max-width: 500px;
+        height: 50px;
+        border-radius: 28px;
+        border: 2px solid #838383f8;
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        &::placeholder {
+            color: #60ddfc;
+        }
+    }
+}
+
+.faq__secciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0;
+    margin: 0 1em;
+}
+
+.accordion-button {
+    background-color: #0000004d !important;
+    width: 75vw;
+    max-width: 900px;
+    justify-content: center;
+    text-align: center;
+
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5) !important;
+
+    font-size: .7em;
+    border-radius: 20px !important;
+
+    &::after{
+        content: unset;
+    }
+}
+
+.accordion-item {
+    background-color: #00000000;
+    border: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover > h2 {
+        transform: scale(1.2);
+        transition: all 500ms ease-out;
+    }
+}
+
+.accordion-body {
+    display: flex;
+    justify-content: center;
+}
+.faq__secciones {
+    & p {
+        margin-top: 20px;
+        color: #7cd1fb;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+
+#separador__FAQ {
+    width: 85vw;
+    max-width: 1000px;
+    height: 0.2em;
+    background-color: #b700ff8c;
+    border: 60px;
+
+    margin: 25px 0 15px 0;
+}

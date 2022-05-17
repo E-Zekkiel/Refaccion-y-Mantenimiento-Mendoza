@@ -1,0 +1,31 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+
+body {
+    background: linear-gradient(0deg, #292f38 13%, #1b8b9f 50%, #659699 100%);
+    font-size: 16px;
+}
+
+.button__up img{
+    border-radius: 50%;
+    width: 3.12em;
+    height: 3.12em;
+    position: fixed;
+    
+    bottom: 10vw;
+    right: 1vh;
+    z-index: 90;
+}

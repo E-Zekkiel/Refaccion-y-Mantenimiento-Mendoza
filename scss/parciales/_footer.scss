@@ -1,0 +1,81 @@
+footer {
+    background-color: #292f38;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'columna1 columna2 columna3 columna4';
+    gap: 10px;
+
+    
+    min-height: 5vh;
+    padding: 0 2vw;
+    margin-top: 50px;
+    font-size: 1em;
+}
+
+.columna1__logo {
+    width: 6.25em;
+    margin: 1em;
+}
+
+.columna2 p{
+    color: #b2b2b2;
+    margin: 0 1rem;
+}
+.columna2__nombre {
+    margin-left: 2em;
+}
+
+.columna2__github a img {
+    width: 20px;
+    margin-left: 2em;
+    margin-top: .8em;
+}
+.columna1{
+    display: flex;
+    justify-content: center;
+    grid-area: columna1;
+    margin: 1rem
+}
+.columna2{
+    grid-area: columna2;
+    margin: 1rem
+}
+.columna3 {
+    grid-area: columna3;
+    margin: 1rem;
+}
+.columna3 img {
+    width: 15px;
+}
+.columna3 p{
+    margin: unset;
+}
+
+.columna4 {
+    grid-area: columna4;
+    position: relative;
+    margin: 1rem;
+    min-width: 9.375em;
+    min-height: 6.25em;
+    
+}
+.columna4 .twitter img{
+    width: 3em;
+    position: absolute;
+
+    top: 35px;
+}
+.columna4 .facebook img{
+    width: 3em;
+    position: absolute;
+
+    left: 50px;
+}
+.columna4 .instagram img{
+    width: 3em;
+    position: absolute;
+
+    top: 50px;
+    left: 90px;
+}
