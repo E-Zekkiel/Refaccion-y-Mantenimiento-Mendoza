@@ -1,14 +1,7 @@
 footer {
-    // display: flex;
     background-color: #292f38;
-    // display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-    // grid-template-areas: 
-    // 'columna1 columna2 columna3 columna4';
-    // gap: 10px;
 
-    
-    min-height: 4vh;
+    height: fit-content;
     padding: 0 2vw;
     margin-top: 50px;
     font-size: 1em;
@@ -17,17 +10,18 @@ footer {
 .columna {
     &1 {
         width: fit-content;
+        height: fit-content;
         justify-content: center;
     // grid-area: columna1;
         margin: 1em 0; //1em;
 
         &__logo {
             width: 6.25em;
-            margin: 1em;
         }
     }
     &2 {
         width: fit-content;
+        height: fit-content;
         justify-content: center;
         // grid-area: columna2;
         margin: 1em 0; //1rem;
@@ -47,6 +41,7 @@ footer {
     }
     &3 {
         width: fit-content;
+        height: fit-content;
         justify-content: center;
         // grid-area: columna3;
         margin: 1em 0; //1rem;
@@ -61,6 +56,7 @@ footer {
     &4 {
         display: block;
         width: fit-content;
+        height: fit-content;
         // grid-area: columna4;
         position: relative;
         margin: 1em 0;//1rem;

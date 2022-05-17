@@ -121,7 +121,7 @@ header {
 
 footer {
   background-color: #292f38;
-  min-height: 4vh;
+  height: fit-content;
   padding: 0 2vw;
   margin-top: 50px;
   font-size: 1em;
@@ -129,17 +129,18 @@ footer {
 
 .columna1 {
   width: fit-content;
+  height: fit-content;
   justify-content: center;
   margin: 1em 0;
 }
 
 .columna1__logo {
   width: 6.25em;
-  margin: 1em;
 }
 
 .columna2 {
   width: fit-content;
+  height: fit-content;
   justify-content: center;
   margin: 1em 0;
 }
@@ -161,6 +162,7 @@ footer {
 
 .columna3 {
   width: fit-content;
+  height: fit-content;
   justify-content: center;
   margin: 1em 0;
 }
@@ -176,6 +178,7 @@ footer {
 .columna4 {
   display: block;
   width: fit-content;
+  height: fit-content;
   position: relative;
   margin: 1em 0;
   min-width: 9.375em;
