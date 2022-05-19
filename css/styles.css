@@ -54,11 +54,11 @@ body {
   padding: 0 1vw;
 }
 
-.header__nav ul li a:hover {
-  transition: .5s;
-  font-size: 1.2em;
+.header__nav ul li:hover {
+  font-size: 1.3em;
   color: #32429b;
   border-bottom: 3px solid #003333;
+  transition: all 300ms ease;
 }
 
 .header__nav--content1 {
@@ -100,7 +100,7 @@ header {
   overflow: hidden;
 }
 
-.header__top a {
+.header__topa {
   align-self: center;
 }
 
@@ -208,6 +208,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  margin-bottom: 4em;
 }
 
 .main__subtitulo {
@@ -392,13 +393,22 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3em;
-  margin-right: 0;
-  margin-left: 0;
+  margin-bottom: 4em;
 }
 
-.servicios p {
-  margin: unset;
+.servicios img {
+  grid-area: img;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 250px;
+  border-radius: 15px;
+}
+
+.servicios__texto {
+  display: block;
+  width: 100%;
+  max-width: 500px;
 }
 
 .contenedor {
@@ -413,28 +423,13 @@ main {
   transition: all .5s;
 }
 
-.contenedor div p {
-  line-height: 2em;
-  padding-left: 1em;
-}
-
-.servicios img {
-  grid-area: img;
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  max-height: 250px;
-  border-radius: 15px;
-}
-
-.servicio__texto {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-}
-
 .contenedor div {
   grid-area: text;
+}
+
+.contenedor div p {
+  line-height: 1.3em;
+  padding-left: 1em;
 }
 
 .contenedor__abajo div {
@@ -445,8 +440,9 @@ main {
 
 .contenedor__abajo div div {
   display: grid;
+  max-width: 300px;
   grid-template-columns: 1fr 1fr;
-  gap: 0 0.7rem;
+  gap: 0 0.8rem;
 }
 
 .botoncito {
@@ -460,7 +456,7 @@ main {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
 }
 
-.proyectos__main {
+.proyectos {
   flex-flow: row wrap;
   gap: 20px;
   padding: 0 8%;
@@ -504,9 +500,9 @@ main {
   font-weight: bold;
   position: absolute;
   text-align: center;
-  padding-top: 30%;
+  padding: 25% 10px 10px 10px;
   background: #8903aa4f;
-  height: 100%;
+  height: 300px;
   width: 100%;
   transition: all 300ms ease;
   border-radius: 5%;
@@ -519,7 +515,7 @@ main {
 }
 
 .proyectos__content--imagenes {
-  height: 200px;
+  height: 300px;
   width: 100%;
   transition: all 300ms ease;
   border-radius: 5%;
@@ -598,10 +594,6 @@ main {
   border-radius: 20px;
 }
 
-.form-control {
-  background: #19252e !important;
-}
-
 .contactanos__formulario div {
   font-size: 1.25em;
   margin: 15px 0;
@@ -616,38 +608,7 @@ main {
   border-radius: 15px;
 }
 
-.formulario__categoria {
-  padding-left: 1em;
-}
-
-.content__categoria {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.content__categoria p {
-  grid-column: span 2;
-}
-
-.comentario {
-  height: 150px !important;
-}
-
-.check {
-  width: 30px !important;
-  height: 30px !important;
-}
-
-.grupo__check {
-  background-color: #00000035;
-  color: #fff;
-}
-
-#consulta {
-  width: 100%;
-}
-
-.content__terminos {
+.contactanos__categoria {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -670,7 +631,71 @@ main {
   margin: 20px 0;
 }
 
-.main__faq {
+.content__categoria p {
+  grid-column: span 2;
+}
+
+.content__terminos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-control {
+  background: #19252e !important;
+}
+
+.comentario {
+  height: 150px !important;
+}
+
+.check {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.grupo__check {
+  background-color: #00000035;
+  color: #fff;
+}
+
+#consulta {
+  width: 100%;
+}
+
+.accordion-button {
+  background-color: #0000004d !important;
+  width: 75vw;
+  max-width: 900px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5) !important;
+  font-size: .7em;
+  border-radius: 20px !important;
+}
+
+.accordion-button::after {
+  content: unset;
+}
+
+.accordion-item {
+  background-color: #00000000;
+  border: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-item:hover > h2 {
+  transform: scale(1.2);
+  transition: all 500ms ease-out;
+}
+
+.accordion-body {
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
   margin: 0 10vw;
   min-height: 90vh;
 }
@@ -737,39 +762,6 @@ main {
   margin: 0 1em;
 }
 
-.accordion-button {
-  background-color: #0000004d !important;
-  width: 75vw;
-  max-width: 900px;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5) !important;
-  font-size: .7em;
-  border-radius: 20px !important;
-}
-
-.accordion-button::after {
-  content: unset;
-}
-
-.accordion-item {
-  background-color: #00000000;
-  border: unset;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.accordion-item:hover > h2 {
-  transform: scale(1.2);
-  transition: all 500ms ease-out;
-}
-
-.accordion-body {
-  display: flex;
-  justify-content: center;
-}
-
 .faq__secciones p {
   margin-top: 20px;
   color: #7cd1fb;
@@ -790,11 +782,11 @@ main {
   .header__nav {
     justify-content: center;
   }
-  .header__top--titulo {
-    max-width: 500px;
-  }
   .header__nav--content2 {
     display: none;
+  }
+  .header__top--titulo {
+    max-width: 500px;
   }
   .contenedor {
     width: 90%;
@@ -805,7 +797,6 @@ main {
     visibility: visible;
   }
   .proyectos__aside {
-    /* background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important; */
     background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
   }
   #sec__electricidad, #sec__construccion, #sec__gas {
@@ -890,8 +881,6 @@ main {
   }
   #lateral label {
     display: block;
-  }
-  #lateral label {
     position: fixed;
     top: 45px;
     right: 30px;
@@ -920,6 +909,7 @@ main {
     width: 45px;
     height: 6px;
     border-radius: 5px;
+    transition: all 600ms ease;
   }
   #spn2 {
     top: 15px;
@@ -956,11 +946,15 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas: 'logo' 'titulo';
   }
-  .button__up img {
-    bottom: 30vw;
-  }
   .header__top a {
     justify-self: unset;
+  }
+  .header__nav {
+    position: unset;
+    margin: 0 3vw;
+  }
+  .button__up img {
+    bottom: 30vw;
   }
   .main__subtitulo {
     border-radius: 20px;
@@ -971,10 +965,6 @@ main {
   }
   .proyectos__capa {
     font-size: 3.8vw;
-  }
-  .header__nav {
-    position: unset;
-    margin: 0 3vw;
   }
   #spn1, #spn2, #spn3 {
     background: #63b1ed;

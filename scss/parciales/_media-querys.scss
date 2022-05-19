@@ -1,13 +1,17 @@
 @media screen and (max-width: 1023px) {
-    .header__nav {
-        justify-content: center;
-    }
-    .header__top--titulo{
-        max-width: 500px;
-        
-    }
-    .header__nav--content2{
-        display: none;
+    .header {
+        &__nav {
+            justify-content: center;
+            
+            &--content2{
+                display: none;
+            }
+        }
+        &__top {
+            &--titulo{
+                max-width: 500px;
+            }
+        }
     }
     .contenedor{
         width: 90%;
@@ -18,9 +22,7 @@
         visibility: visible;
     }
     .proyectos__aside{
-        /* background: linear-gradient(180deg, #003f4e 20%, #003e4e82 50%, #65919900 80%) !important; */
-
-    background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
+        background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
     }
     #sec__electricidad, #sec__construccion, #sec__gas {        
         grid-template-columns: 1fr;
@@ -43,11 +45,6 @@
     }
     footer {
         font-size: 1em;
-        // grid-template-columns: repeat(2, 1fr);
-        // grid-template-rows: repeat(2,1fr);
-        // grid-template-areas: 
-        // 'columna1   columna3'
-        // 'columna2   columna4';
     }
 
     .header__nav--content2{
@@ -75,15 +72,17 @@
     .main--proyectos{
         flex-flow: column;
     }
-    .proyectos__aside{
-        background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
-        
-    }
-    .proyectos__aside a{
-        font-size: 4em;
-    }
-    .proyectos__capa{
-        font-size: 3.3vw;
+    .proyectos {
+        &__aside{
+            background: linear-gradient(270deg, #003f4e 20%, #003e4e82 50%, #65919900 80%);
+            
+            & a{
+                font-size: 4em;
+            }
+        }
+        &__capa{
+            font-size: 3.3vw;
+        }
     }
     
     .contactanos {
@@ -94,28 +93,33 @@
         
         margin-bottom: 8em;
     }
-    #sec__electricidad {
-        grid-template-columns: 1fr;
+    #sec {
+        &__electricidad {
+            grid-template-columns: 1fr;
+        }
+        &__construccion {
+            grid-template-columns: 1fr;
+        }
+        &__gas {
+            grid-template-columns: 1fr;
+        }
     }
-    #sec__construccion {
-        grid-template-columns: 1fr;
-    }
-    #sec__gas {
-        grid-template-columns: 1fr;
-    }
-    .header__nav--content1 ul{
-        display: block;
-        background: linear-gradient(270deg, rgba(29,110,159,1) 0%, rgba(63,99,121,0.50) 90%, rgba(28,38,44,0) 100%);
-        position: fixed;
-        top: 0;
-        right: -50%;
-        transition: all 0.5s;
-        
-        width: 50%;
-        height: 100vh;
-        margin: 0;
-        padding: 8em 0;
-        z-index: 95;
+    
+    .header__nav--content1{
+        & ul{
+            display: block;
+            background: linear-gradient(270deg, rgba(29,110,159,1) 0%, rgba(63,99,121,0.50) 90%, rgba(28,38,44,0) 100%);
+            position: fixed;
+            top: 0;
+            right: -50%;
+            transition: all 0.5s;
+            
+            width: 50%;
+            height: 100vh;
+            margin: 0;
+            padding: 8em 0;
+            z-index: 95;
+        }
     }
     .header__nav--content1 a {
         display: block;
@@ -123,10 +127,9 @@
         padding: 0 3em;
         border-bottom: 1px solid rgba(#fff, 02);
     }
+
     #lateral label {
         display: block;
-    }
-    #lateral label {
         position: fixed;
         top: 45px;
         right: 30px;
@@ -155,35 +158,38 @@
         content: '';
         background: #184d75;
         border: 1px inset #63b1ed;
-        // border-style: inset ; border-width: 1px;
         width: 45px;
         height: 6px;
         border-radius: 5px;    
+        transition: all 600ms ease;
     }
     
-
     #spn2 {
         top: 15px;
     }
-     #spn3 {
+    #spn3 {
         top: 29px;
     }
     
-    #mostrar__lateral:checked ~ .btn__label #spn1{
-        background: lightcoral;
-        transform: rotate(45deg);
-        top: 10px;
+    #mostrar__lateral:checked ~ .btn__label #spn {
+        &1{
+            background: lightcoral;
+            transform: rotate(45deg);
+            top: 10px;
+        }
+
+        &2{
+            opacity: 0;
+        }
+
+        &3{
+            background: lightcoral;
+            transform: rotate(-45deg);
+            top: 10px;
+        }
     }
-    #mostrar__lateral:checked ~ .btn__label #spn2{
-        opacity: 0;
-    }
-    #mostrar__lateral:checked ~ .btn__label #spn3{
-        background: lightcoral;
-        transform: rotate(-45deg);
-        top: 10px;
-    }
-    
 }
+
 @media screen and (max-width: 500px) {
     body {
         font-size: 12px;
@@ -195,32 +201,39 @@
     footer {
         overflow: hidden;
     }
-    .header__top{
-        grid-template-columns: 1fr;
-        grid-template-areas: 'logo' 'titulo';
+    .header {
+        &__top{
+            grid-template-columns: 1fr;
+            grid-template-areas: 'logo' 'titulo';
+    
+            & a {
+                justify-self: unset;
+            }
+        }
+
+        &__nav {
+            position: unset;
+            margin: 0 3vw;
+        }
     }
     .button__up img{        
         bottom: 30vw;
     }
-    .header__top a {
-        justify-self: unset;
+    .main {
+        &__subtitulo {
+            border-radius: 20px;
+        }
+
+        &--proyectos {
+            margin: 0 3vw;
+            height: unset;
+        }
     }
-    .main__subtitulo {
-        border-radius: 20px;
-    }
-    .main--proyectos{
-        margin: 0 3vw;
-        height: unset;
-    }
+    
     .proyectos__capa{
         font-size: 3.8vw;
     }
-
-    .header__nav {
-        position: unset;
-        margin: 0 3vw;
-    }
-
+    
     #spn1, #spn2, #spn3 {
         background: #63b1ed;
             
