@@ -41,7 +41,7 @@
 @media (max-width: 700px) {
     body{
         font-size: 14px;
-        background: linear-gradient(0deg, #292f38 19%, #1b8b9f 50%, #659699 100%);
+        background: $color-body;
     }
     footer {
         font-size: 1em;
@@ -173,7 +173,7 @@
     
     #mostrar__lateral:checked ~ .btn__label #spn {
         &1{
-            background: lightcoral;
+            background: $color-cruz;
             transform: rotate(45deg);
             top: 10px;
         }
@@ -183,7 +183,7 @@
         }
 
         &3{
-            background: lightcoral;
+            background: $color-cruz;
             transform: rotate(-45deg);
             top: 10px;
         }

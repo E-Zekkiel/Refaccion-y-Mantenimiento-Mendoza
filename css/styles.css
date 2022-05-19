@@ -813,7 +813,7 @@ main {
 @media (max-width: 700px) {
   body {
     font-size: 14px;
-    background: linear-gradient(0deg, #292f38 19%, #1b8b9f 50%, #659699 100%);
+    background: linear-gradient(0deg, #292f38 13%, #1b8b9f 50%, #659699 100%);
   }
   footer {
     font-size: 1em;
@@ -918,7 +918,7 @@ main {
     top: 29px;
   }
   #mostrar__lateral:checked ~ .btn__label #spn1 {
-    background: lightcoral;
+    background: #c94d4d;
     transform: rotate(45deg);
     top: 10px;
   }
@@ -926,7 +926,7 @@ main {
     opacity: 0;
   }
   #mostrar__lateral:checked ~ .btn__label #spn3 {
-    background: lightcoral;
+    background: #c94d4d;
     transform: rotate(-45deg);
     top: 10px;
   }
