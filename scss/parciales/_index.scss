@@ -81,7 +81,8 @@ main{
             flex-direction: column;
             justify-content: center;
     
-            & h4 {
+            & p {
+                font-weight: bold;
                 font-size: 1em;
             }
         }

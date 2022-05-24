@@ -20,8 +20,8 @@ body {
 
 .button__up img {
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 48px;
+  height: 51px;
   position: fixed;
   bottom: 10vw;
   right: 1vh;
@@ -83,7 +83,7 @@ body {
 }
 
 /* ----------------------------NAV mobile----------------------------*/
-#mostrar__lateral {
+.mostrar__lateral {
   display: none;
 }
 
@@ -287,7 +287,8 @@ main {
   justify-content: center;
 }
 
-.main__info--columna h4 {
+.main__info--columna p {
+  font-weight: bold;
   font-size: 1em;
 }
 
