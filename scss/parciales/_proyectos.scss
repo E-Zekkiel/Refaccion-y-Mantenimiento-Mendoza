@@ -50,7 +50,7 @@
             
             
             background: #8903aa4f;
-            height: 300px;
+            height: $ancho;
             width: 100%;
             transition: all 300ms ease;
             border-radius: 5%;
@@ -62,7 +62,7 @@
             }
         }
         &--imagenes {
-            height: 300px;
+            height: $ancho;
             width: 100%;
             transition: all 300ms ease;
             border-radius: 5%;
