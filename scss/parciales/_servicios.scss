@@ -14,7 +14,7 @@
         width: 100%;
         max-width: $ancho+100px;
         height: 100%;
-        max-height: $ancho-50px;
+        max-height: ($ancho)-50px;
         border-radius: 15px;
     }
     &__texto {
