@@ -81,17 +81,13 @@
 
 #sec__ {
     &electricidad {
-        display: none;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        @include none-2col;
         &:target {
             display: grid;
         }
     }
     &gas {
-        display: none;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        @include none-2col;
         &:target {
             display: grid;
             #sec--electricidad {
@@ -100,9 +96,7 @@
         }
     }
     &construccion {
-        display: none;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        @include none-2col;
         &:target {
             display: grid;
         }

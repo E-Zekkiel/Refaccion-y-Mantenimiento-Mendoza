@@ -6,6 +6,8 @@ $color-del-header: linear-gradient(90deg, #65969900 3%, #39464734 5%, #394647 8%
 
 $color-body: linear-gradient(0deg, #292f38 13%, #1b8b9f 50%, #659699 100%);
 
+$color-nav:  linear-gradient(90deg, #65969900 3%, #00a2ff1b 5%, #00a2ff72 8%, #00a2ff72 92%, #00a2ff1b 95%, #65969900 97%);
+
 $borde-c-t: #1f649272;
 
 $color-cruz: #c94d4d;
@@ -45,3 +47,33 @@ $estilos: (
     centro: center,
     c-ofi: linear-gradient(180deg, rgba(28,38,44,1) 0%, rgba(28,38,44,0.4962359943977591) 76%, rgba(28,38,44,0) 100%),
 );
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.box-small {
+    @include sizes(100px, 100px)
+}
+
+.box-medium {
+    @include sizes(200px, 200px)
+}
+
+.box-large {
+    @include sizes(500px, 500px)
+}
+
+@mixin none-2col {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@mixin generar-flex ($direccion, $eje-principal, $eje-secundario) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $eje-principal;
+    align-items: $eje-secundario;
+}

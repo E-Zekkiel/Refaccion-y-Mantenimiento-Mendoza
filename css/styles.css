@@ -75,6 +75,21 @@
   background-color: green;
 }
 
+.box-small {
+  height: 100px;
+  width: 100px;
+}
+
+.box-medium {
+  height: 200px;
+  width: 200px;
+}
+
+.box-large {
+  height: 500px;
+  width: 500px;
+}
+
 * {
   list-style: none;
   text-decoration: none;
@@ -107,9 +122,10 @@ body {
 .header__nav {
   background: linear-gradient(90deg, #65969900 3%, #00a2ff1b 5%, #00a2ff72 8%, #00a2ff72 92%, #00a2ff1b 95%, #65969900 97%);
   display: flex;
-  height: 3em;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 3em;
   padding: 0 15px;
   font-size: 1.25em;
   overflow: hidden;
