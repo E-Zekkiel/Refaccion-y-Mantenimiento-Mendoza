@@ -1,5 +1,5 @@
 .main__contactanos {
-    justify-content: center;
+    justify-content: map-get($estilos, centro);
 }
 .contactanos {
     display: grid;
@@ -19,7 +19,7 @@
         height: 35vh;
         margin-bottom: 3vw;
         border-radius: 2vw;
-        box-shadow: 0 15px 25px rgba(0,0,0, 0.5);
+        box-shadow: map-get($estilos, sombra);
     }
     &__formulario {
         grid-area: form;
@@ -47,7 +47,7 @@
     }
     &__oficinas {
         grid-area: ofi;
-        background: linear-gradient(180deg, rgba(28,38,44,1) 0%, rgba(28,38,44,0.4962359943977591) 76%, rgba(28,38,44,0) 100%);   
+        background: map-get($estilos, c-ofi);   
         width: 100%;
         min-height: 500px;
         font-size: 1.25em;

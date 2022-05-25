@@ -11,7 +11,37 @@ $borde-c-t: #1f649272;
 $color-cruz: #c94d4d;
 
 
-$ancho: 300px
+$ancho: 300px;
 
 
-//No tengo muchos cosas repetidas, o almenos no las encuentro
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: (100% / 12) * $i;
+    }
+    
+}
+
+@each $color in blue,yellow,black {
+    .#{$color} {
+        background-color: #{$color};
+    }
+}
+
+$redes: (
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #c25e30,
+    whatsaspp: green
+);
+
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+$estilos: (
+    sombra: 0 15px 25px rgba(0,0,0, 0.5),
+    centro: center,
+    c-ofi: linear-gradient(180deg, rgba(28,38,44,1) 0%, rgba(28,38,44,0.4962359943977591) 76%, rgba(28,38,44,0) 100%),
+);
