@@ -16,12 +16,12 @@ $color-cruz: #c94d4d;
 $ancho: 300px;
 
 
-@for $i from 1 through 12 {
-    .col-#{$i} {
-        width: (100% / 12) * $i;
-    }
+// @for $i from 1 through 12 {
+//     .col-#{$i} {
+//         width: (100% / 12) * $i;
+//     }
     
-}
+// }
 
 @each $color in blue,yellow,black {
     .#{$color} {
