@@ -1,7 +1,7 @@
 footer {
     background-color: #292f38;
 
-    height: fit-content;
+    min-height: 160px;
     padding: 0 2vw;
     margin-top: 50px;
     font-size: 1em;
@@ -11,39 +11,43 @@ footer {
     &1 {
         width: fit-content;
         height: fit-content;
-        justify-content: center;
-    // grid-area: columna1;
-        margin: 1em 0; //1em;
 
         &__logo {
-            width: 6.25em;
+            width: 10em;
         }
     }
     &2 {
+        @include generar-flex (column, center, unset);
         width: fit-content;
-        height: fit-content;
-        justify-content: center;
-        // grid-area: columna2;
-        margin: 1em 0; //1rem;
+        margin: 1em 0;
+        gap: 6px;
 
         & p{
             color: #b2b2b2;
             margin: 0 1rem;
         }
+        & a {
+            width: fit-content;
+            line-height: 10px;
+            vertical-align: middle;
+
+            &:hover {
+                color: lightskyblue;
+            }
+        }
         &__nombre {
             margin-left: 2em;
         }
-        &__github--logo {
-            width: 20px;
+        &__github {
             margin-left: 2em;
-            margin-top: .8em;
+            &--logo {
+                width: 20px;
+            }
         }
     }
     &3 {
         width: fit-content;
-        height: fit-content;
-        justify-content: center;
-        // grid-area: columna3;
+        @include generar-flex (column, center, unset);
         margin: 1em 0; //1rem;
 
         & img {
@@ -56,8 +60,6 @@ footer {
     &4 {
         display: block;
         width: fit-content;
-        height: fit-content;
-        // grid-area: columna4;
         position: relative;
         margin: 1em 0;//1rem;
         min-width: 9.375em;
@@ -67,20 +69,25 @@ footer {
             width: 3em;
             position: absolute;
         
-            top: 35px;
+            top: 55px;
+            @include redes-bg (#3ea0eb);
+           
         }
         & .facebook img{
             width: 3em;
             position: absolute;
         
-            left: 50px;
+            left: 57px;
+            top: 20px;
+            @include redes-bg (#3a5795);
         }
         & .instagram img{
             width: 3em;
             position: absolute;
         
-            top: 50px;
+            top: 70px;
             left: 90px;
+            @include redes-bg (linear-gradient(191deg, rgba(131,58,180,1) 27%, rgba(247,30,36,1) 63%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%));
         }
     }
 }

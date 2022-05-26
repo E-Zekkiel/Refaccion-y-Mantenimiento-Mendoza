@@ -77,3 +77,14 @@ $estilos: (
     justify-content: $eje-principal;
     align-items: $eje-secundario;
 }
+
+@mixin redes-bg ($color-redes) {
+    background-color: #3ea0eb00;
+    border-radius: 25%;
+
+    &:hover {
+        transition: all 300ms;
+        background: $color-redes;
+        border-radius: 50%;
+    }
+}

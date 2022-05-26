@@ -165,7 +165,7 @@ header {
 
 footer {
   background-color: #292f38;
-  height: fit-content;
+  min-height: 160px;
   padding: 0 2vw;
   margin-top: 50px;
   font-size: 1em;
@@ -174,19 +174,20 @@ footer {
 .columna1 {
   width: fit-content;
   height: fit-content;
-  justify-content: center;
-  margin: 1em 0;
 }
 
 .columna1__logo {
-  width: 6.25em;
+  width: 10em;
 }
 
 .columna2 {
-  width: fit-content;
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: unset;
+  width: fit-content;
   margin: 1em 0;
+  gap: 6px;
 }
 
 .columna2 p {
@@ -194,20 +195,34 @@ footer {
   margin: 0 1rem;
 }
 
+.columna2 a {
+  width: fit-content;
+  line-height: 10px;
+  vertical-align: middle;
+}
+
+.columna2 a:hover {
+  color: lightskyblue;
+}
+
 .columna2__nombre {
+  margin-left: 2em;
+}
+
+.columna2__github {
   margin-left: 2em;
 }
 
 .columna2__github--logo {
   width: 20px;
-  margin-left: 2em;
-  margin-top: .8em;
 }
 
 .columna3 {
   width: fit-content;
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: unset;
   margin: 1em 0;
 }
 
@@ -222,7 +237,6 @@ footer {
 .columna4 {
   display: block;
   width: fit-content;
-  height: fit-content;
   position: relative;
   margin: 1em 0;
   min-width: 9.375em;
@@ -232,20 +246,45 @@ footer {
 .columna4 .twitter img {
   width: 3em;
   position: absolute;
-  top: 35px;
+  top: 55px;
+  background-color: #3ea0eb00;
+  border-radius: 25%;
+}
+
+.columna4 .twitter img:hover {
+  transition: all 300ms;
+  background: #3ea0eb;
+  border-radius: 50%;
 }
 
 .columna4 .facebook img {
   width: 3em;
   position: absolute;
-  left: 50px;
+  left: 57px;
+  top: 20px;
+  background-color: #3ea0eb00;
+  border-radius: 25%;
+}
+
+.columna4 .facebook img:hover {
+  transition: all 300ms;
+  background: #3a5795;
+  border-radius: 50%;
 }
 
 .columna4 .instagram img {
   width: 3em;
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 90px;
+  background-color: #3ea0eb00;
+  border-radius: 25%;
+}
+
+.columna4 .instagram img:hover {
+  transition: all 300ms;
+  background: linear-gradient(191deg, #833ab4 27%, #f71e24 63%, #fd1d1d 72%, #fcb045 100%);
+  border-radius: 50%;
 }
 
 main {
