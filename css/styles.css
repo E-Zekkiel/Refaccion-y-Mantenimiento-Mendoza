@@ -151,7 +151,7 @@ body {
 
 header {
   background-image: linear-gradient(90deg, #65969900 3%, #39464734 5%, #394647 8%, #394647 92%, #39464734 95%, #65969900 97%);
-  margin: 0 3em;
+  margin: 0 3.5em;
 }
 
 .header__top {
@@ -163,6 +163,8 @@ header {
 }
 
 .header__top--logo {
+  background: radial-gradient(#0000005e, #ffffff00 45%);
+  background-position: 0 25px;
   align-self: center;
   grid-area: logo;
   width: 12.5rem;
@@ -170,11 +172,16 @@ header {
 }
 
 .header__top--titulo {
+  text-shadow: 0 15px 25px #00000080;
+  font-weight: bolder;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000000;
+  -webkit-text-stroke: 0.3px #00aeffb4;
   grid-area: titulo;
   font-size: 2.5em;
   text-align: center;
   min-height: 60px;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 footer {
