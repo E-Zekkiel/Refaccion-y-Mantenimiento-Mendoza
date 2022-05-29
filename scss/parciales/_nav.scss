@@ -1,42 +1,56 @@
 .header__nav {
     background: $color-nav;
-    @include generar-flex (row, space-between, center);
+    @include generar-flex (row, center, center);
     height: 3em;
-    padding: 0 15px;
     font-size: 1.25em;
     overflow: hidden;
     min-height: 1.25em;
     padding: 0 9vw;
     margin: 0 3em;
     position: sticky;
+    gap: 25px;
     top: 0;
 
     z-index: 100;
 
     & ul {
         display: flex;
+        align-items: center;
         margin-bottom: unset;
-
+        padding-left: unset;
         & li{
-            padding: 0 1vw;
-        
-            &:hover{
-                font-size: 1.3em;
-                color: rgb(50, 66, 155);
-                border-bottom: 3px solid #003333;
-                transition: all 300ms ease;
-            }
+            line-height: 3em;
+            transition: all 300ms ease-out;
+            justify-self: center;
+            height: 3em;
         }
     }
     &--content {
         &1{
-            vertical-align: middle;
-            padding-right: 25px;
+            & a {
+                display: block;
+                text-align: center;
+                border-radius: 10%;
+                padding: 0 10px;
+                background: $color-del-header;
+                background-size: 0%;
+                transition: all 200ms ease-out;
+                &:hover {
+                    background-size: 1%;
+                    transform: scale(1.3);
+                    transition: all 300ms ease-out;
+                    color: unset;
+                }
+            }
         }
         &2{
             display: flex;
             align-items: flex-end;
             font-size: 1.2vw;
+
+            & a:hover {
+                color: #00ff95;
+            }
         }
     }
     &--icon {
