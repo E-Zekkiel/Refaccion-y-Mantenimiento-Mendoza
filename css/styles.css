@@ -178,11 +178,12 @@ header {
 }
 
 footer {
-  background-color: #292f38;
+  background: linear-gradient(#ffffff00, #292f38 20%);
   min-height: 160px;
-  padding: 0 2vw;
+  padding: 25px 2vw 25px 2vw;
   margin-top: 50px;
   font-size: 1em;
+  max-width: unset !important;
 }
 
 .columna1 {
@@ -290,7 +291,7 @@ footer {
   width: 3em;
   position: absolute;
   top: 70px;
-  left: 90px;
+  left: 87px;
   background-color: #3ea0eb00;
   border-radius: 25%;
 }
