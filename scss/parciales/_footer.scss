@@ -6,12 +6,16 @@ footer {
     margin-top: 50px;
     font-size: 1em;
     max-width: unset !important;
+    & > div {
+        padding: 10px;
+    }
 }
 
 .columna {
     &1 {
         width: fit-content;
         height: fit-content;
+        padding: 0;
 
         &__logo {
             width: 10em;
@@ -22,6 +26,7 @@ footer {
         width: fit-content;
         margin: 1em 0;
         gap: 6px;
+        padding: 0;
 
         & p{
             color: #b2b2b2;
@@ -50,6 +55,7 @@ footer {
         width: fit-content;
         @include generar-flex (column, center, unset);
         margin: 1em 0; //1rem;
+        padding: 0;
 
         & img {
             width: 15px;
@@ -63,11 +69,12 @@ footer {
         width: fit-content;
         position: relative;
         margin: 1em 0;//1rem;
+        padding: 0;
         min-width: 9.375em;
         min-height: 6.25em;
         
         & .twitter img{
-            width: 3em;
+            width: 48px;
             position: absolute;
         
             top: 55px;
@@ -75,19 +82,19 @@ footer {
            
         }
         & .facebook img{
-            width: 3em;
+            width: 48px;
             position: absolute;
         
-            left: 57px;
-            top: 20px;
+            left: 45px;
+            top: 15px;
             @include redes-bg (#3a5795);
         }
         & .instagram img{
-            width: 3em;
+            width: 48px;
             position: absolute;
         
-            top: 70px;
-            left: 87px;
+            top: 68px;
+            left: 73px;
             @include redes-bg (linear-gradient(191deg, rgba(131,58,180,1) 27%, rgba(247,30,36,1) 63%, rgba(253,29,29,1) 72%, rgba(252,176,69,1) 100%));
         }
     }

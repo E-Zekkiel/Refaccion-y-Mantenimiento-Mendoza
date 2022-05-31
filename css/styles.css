@@ -193,9 +193,14 @@ footer {
   max-width: unset !important;
 }
 
+footer > div {
+  padding: 10px;
+}
+
 .columna1 {
   width: fit-content;
   height: fit-content;
+  padding: 0;
 }
 
 .columna1__logo {
@@ -210,6 +215,7 @@ footer {
   width: fit-content;
   margin: 1em 0;
   gap: 6px;
+  padding: 0;
 }
 
 .columna2 p {
@@ -246,6 +252,7 @@ footer {
   justify-content: center;
   align-items: unset;
   margin: 1em 0;
+  padding: 0;
 }
 
 .columna3 img {
@@ -261,12 +268,13 @@ footer {
   width: fit-content;
   position: relative;
   margin: 1em 0;
+  padding: 0;
   min-width: 9.375em;
   min-height: 6.25em;
 }
 
 .columna4 .twitter img {
-  width: 3em;
+  width: 48px;
   position: absolute;
   top: 55px;
   background-color: #3ea0eb00;
@@ -280,10 +288,10 @@ footer {
 }
 
 .columna4 .facebook img {
-  width: 3em;
+  width: 48px;
   position: absolute;
-  left: 57px;
-  top: 20px;
+  left: 45px;
+  top: 15px;
   background-color: #3ea0eb00;
   border-radius: 25%;
 }
@@ -295,10 +303,10 @@ footer {
 }
 
 .columna4 .instagram img {
-  width: 3em;
+  width: 48px;
   position: absolute;
-  top: 70px;
-  left: 87px;
+  top: 68px;
+  left: 73px;
   background-color: #3ea0eb00;
   border-radius: 25%;
 }
