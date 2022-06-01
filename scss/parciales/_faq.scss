@@ -39,7 +39,7 @@
 
     &__busqueda{
         position: relative;
-        max-height: 400px;
+        // max-height: 400px;
         overflow: hidden;
         border-radius: 5vw;
         box-shadow: 0 15px 25px rgba(0,0,0,0.5);
@@ -47,6 +47,7 @@
     
         & img {
             width: 100%;
+            min-height: 30vh;
             transition: all 500ms ease-out;
         }
     
