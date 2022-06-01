@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 4em;
+    -webkit-text-stroke: 0.5px #58bfc7;
     
     
     & img {
@@ -15,7 +16,10 @@
         max-width: $ancho+100px;
         height: 100%;
         max-height: ($ancho)-50px;
+        border: 3px solid rgba(0, 0, 0, 0.301);
         border-radius: 15px;
+        box-shadow: 0 5px 20px #00000080;
+        padding: 0;
     }
     &__texto {
         display: block;
@@ -27,6 +31,7 @@
 .contenedor{
     width: 90%;
     background-color: #003333;
+    box-shadow: 0 15px 25px #00000080;
     gap: 2em;
     
     border-radius: 1em;
@@ -37,6 +42,11 @@
 
     overflow: hidden;
     transition: all .5s;
+    &:hover {
+        transform: scale(1.1);
+        transition: all 300ms ease-out;
+        z-index: 10;
+    }
 
     & div {
         grid-area: text;
