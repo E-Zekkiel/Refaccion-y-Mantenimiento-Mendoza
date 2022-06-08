@@ -75,7 +75,7 @@ body {
   background: linear-gradient(90deg, #65969900 3%, #00a2ff1b 5%, #00a2ff72 8%, #00a2ff72 92%, #00a2ff1b 95%, #65969900 97%);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 3em;
   font-size: 1.25em;
@@ -136,8 +136,12 @@ body {
   align-items: center;
 }
 
+.header__nav--icon a {
+  font-size: .8em;
+}
+
 .header__nav--icon img {
-  width: 3.5vw;
+  width: 2em;
 }
 
 /* ----------------------------NAV mobile----------------------------*/
@@ -679,7 +683,6 @@ main {
   transition: all 300ms ease;
   transform: scale(1.1);
   z-index: 50 !important;
-  cursor: pointer;
 }
 
 #sec__electricidad {
@@ -794,12 +797,10 @@ main {
 
 .form-control {
   background: #19252e !important;
-  color: #05b9e6;
 }
 
 .comentario {
   height: 150px !important;
-  color: white;
 }
 
 .check {

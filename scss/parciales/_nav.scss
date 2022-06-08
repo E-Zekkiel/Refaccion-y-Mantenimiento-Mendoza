@@ -1,6 +1,6 @@
 .header__nav {
     background: $color-nav;
-    @include generar-flex (row, center, center);
+    @include generar-flex (row, space-around, center);
     height: 3em;
     font-size: 1.25em;
     overflow: hidden;
@@ -59,8 +59,11 @@
         align-items: center;
     }
     &--icon {
+        & a {
+            font-size: .8em;
+        }
         & img {
-            width: 3.5vw;
+            width: 2em;
         }
     }
 }
